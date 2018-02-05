@@ -215,4 +215,5 @@ exec --no-startup-id spotify
 #screenlayout
 #exec_always sh /home/diego/.screenlayout/layout.sh
 exec compton -f
-exec indicator-sound-switcherexec_always feh --bg-scale ~/Imagens/.wallpaper.jpgexec_always feh --bg-scale ~/Imagens/.wallpaper.jpg
+exec indicator-sound-switcher
+exec_always feh --bg-scale ~/Imagens/.wallpaper.jpg
