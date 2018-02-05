@@ -1,5 +1,12 @@
+i3
 rofi
 pactl
 playerctl
 feh
 compton
+ArcTheme
+Moka
+lxappearance
+thunar
+arandr
+indicator-sound-switcher
