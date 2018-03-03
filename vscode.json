@@ -1,0 +1,43 @@
+{
+    "diffEditor.renderSideBySide": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.cursorStyle": "line",
+    "editor.detectIndentation": false,
+    "editor.fontSize": 15,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [80],
+    "editor.scrollBeyondLastLine": false,
+    "editor.tabCompletion": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrap": "on",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.tmp": true,
+        "**/.vscode": true,
+        "**/.sourcemaps": true
+    },
+    "terminal.integrated.cursorStyle": "line",
+    "search.useIgnoreFiles": false,
+    "typescript.useCodeSnippetsOnMethodSuggest": true,
+    "workbench.editor.enablePreview": true,
+    "workbench.iconTheme": "vscode-great-icons",
+    "window.restoreFullscreen": true,
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "One Dark Pro",
+    "todohighlight.isEnable": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": false,
+    "editor.minimap.enabled": false
+}

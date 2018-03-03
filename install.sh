@@ -10,19 +10,11 @@ echo "Instalando i3"
 #sudo apt install i3
 #sudo apt install i3blocks -y
 
-echo "Adicionando chave google-chrome"
-#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-
-echo "Adicionano repositório"
-#sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-
-echo "Removendo arquivo chrome desnecessário"
-#sudo rm /etc/apt/sources.list.d/google.list
-
-echo "Atualizando repositórios"
-#sudo apt-get update
-
 echo "Instalando Google Chrome"
+#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+#sudo rm /etc/apt/sources.list.d/google.list
+#sudo apt-get update
 #sudo apt install google-chrome-stable -y
 
 echo "Instalando Git"
@@ -42,6 +34,9 @@ echo "Instalando Vscode"
 #sudo apt update
 #sudo apt install code -y
 
+echo "Configurando Vscode"
+#cp Configs/config-files/vscode.json .config/Code/User/settings.json
+
 echo "Criando Configs Folder"
 #mkdir Configs
 
@@ -51,7 +46,7 @@ echo "Entrando pasta Config"
 echo "Baixando Repositório de Configs"
 #git clone https://github.com/Diego-Varela-Silva/config-files.git
 
-echo "Baixando Rofi"
+echo "Instalando Rofi"
 #sudo apt install rofi -y
 
 echo "Instalando playerctl"
@@ -86,7 +81,7 @@ echo "Configurando Comando Luminosidade"
 #sudo cp config-files/brightness /bin/brightness
 #sudo chmod +x /bin/brightness
 
-echo "Criando Pasta de Fonts"
+echo "Copiando Pasta de Fonts"
 #mkdir -p ~/.fonts
 #cd ~/.fonts
 #cp ~/Configs/config-files/fonts/* ./
@@ -113,3 +108,38 @@ echo "Instalando Spotify"
 
 echo "Instando ZSH"
 #sudo apt install zsh -y
+#chsh -s $(which zsh)
+
+echo "Instalando oh-my-zsh"
+#sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+echo "Adicionando alias"
+#cat Configs/config-files/alias.sh >> .zshrc
+
+echo "Instalando HTOP"
+#sudo apt install htop -y
+
+echo "Instalando Gparted"
+#sudo apt install gparted -y
+
+echo "Instalando Ccze"
+#sudo apt install ccze -y
+
+echo "Instalando Java"
+#sudo apt-get install python-software-properties -y
+#sudo add-apt-repository ppa:webupd8team/java
+#sudo apt update
+#sudo apt install oracle-java8-set-default
+
+echo "Instalando Stremio"
+#sudo wget "https://www.strem.io/download?platform=linux&four=4" -O /bin/stremio
+#sudo chmod +x /bin/stremio
+
+echo "Instalando Dropbox"
+#sudo apt install nautilus-dropbox
+#sudo apt install thunar-dropbox-plugin
+#/usr/bin/dropbox start -i
+#/usr/bin/dropbox autostart y
+
+echo "Configure seu profile no terminal"
+echo "Instale suas extensoes do vscode"

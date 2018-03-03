@@ -1,0 +1,23 @@
+Geral
+
+Debugger for chrome
+Editorconfig
+Javascript Es6 Code Snippts
+OneDarkPro
+Intellij text key map
+TODO highlight
+vscode great icons
+
+--------------------------------
+Ionic + Angular2+
+
+Angular language service
+angular2-inline
+Cordova Tools
+Json to TS
+Move to TS
+Tslint
+
+--------------------------------
+Ionic + AngularJS
+Eslint
