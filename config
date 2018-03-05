@@ -88,7 +88,7 @@ set $workspace3 "3 "
 set $workspace4 "4 "
 set $workspace5 "5 "
 set $workspace6 "6 SAV"
-set $workspace7 "7 "
+set $workspace7 "7 "
 set $workspace8 "8 "
 set $workspace9 "9 "
 set $workspace10 "10 "
@@ -115,7 +115,6 @@ bindsym $mod+KP_7 workspace $workspace7
 bindsym $mod+KP_8 workspace $workspace8
 bindsym $mod+KP_9 workspace $workspace9
 bindsym $mod+KP_0 workspace $workspace10
-
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -145,7 +144,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Deseja realizar o logout? Isto encerra sua sessao.' -b 'Sim, sair' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Deseja realizar o logout? Isto encerra sua sessão.' -b 'Sim, sair' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

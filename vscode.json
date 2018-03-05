@@ -29,7 +29,7 @@
     "terminal.integrated.cursorStyle": "line",
     "search.useIgnoreFiles": false,
     "typescript.useCodeSnippetsOnMethodSuggest": true,
-    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "vscode-great-icons",
     "window.restoreFullscreen": true,
     "window.zoomLevel": 0,

@@ -7,6 +7,9 @@ OneDarkPro
 Intellij text key map
 TODO highlight
 vscode great icons
+beatify-css-scss
+kotlin language
+xml tools
 
 --------------------------------
 Ionic + Angular2+
