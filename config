@@ -233,7 +233,8 @@ exec_always feh --bg-scale ~/Imagens/.wallpaper.jpg
 
 #Move for the correct workspace
 for_window [class="Google-chrome"] move to workspace $workspace2
-for_window [class="Code|jetbrains-rubymine|jetbrains-idea-ce"] move to workspace $workspace3
+for_window [class="Code|jetbrains-rubymine|jetbrains-idea-ce|jetbrains-idea"] move to workspace $workspace3
 for_window [class="Thunar"] move to workspace $workspace4
 for_window [class="Insomnia"] move to workspace $workspace5
+for_window [class="jetbrains-datagrip"] move to workspace $workspace7
 for_window [class="Spotify"] move to workspace $workspace10
