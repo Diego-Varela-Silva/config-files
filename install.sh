@@ -6,6 +6,9 @@ sudo apt update
 echo "Instalando atualizacoes"
 sudo apt dist-upgrade
 
+echo "Permissão na pasta de aplicativos"
+sudo chmod 777 /opt/
+
 echo "Instalando i3"
 sudo apt install i3
 sudo apt install i3blocks -y
@@ -21,8 +24,8 @@ echo "Instalando Git"
 sudo apt install git -y
 
 echo "Configurando Git"
- git config --global user.email "diegovarela.paiva@hotmail.com"
- git config --global user.name "Diego Varela"
+git config --global user.email "diegovarela.paiva@hotmail.com"
+git config --global user.name "Diego Varela"
 
 echo "Instalando Curl"
 sudo apt install curl -y
@@ -141,6 +144,14 @@ sudo apt install thunar-dropbox-plugin
 /usr/bin/dropbox start -i
 /usr/bin/dropbox autostart y
 
+echo "Instalando intellij ultimate"
+sudo wget "https://download-cf.jetbrains.com/idea/ideaIU-2017.3.4.tar.gz" -O intellij.tar.gz
+tar -xvzf intellij.taz.gz
+mv idea-IU-* /opt
+/bin/idea.sh
+sudo rm intellij.taz.gz
+
 echo "Configure seu profile no terminal"
 echo "Configure thunar"
 echo "Instale suas extensoes do vscode"
+echo "Configure seu spotify"
