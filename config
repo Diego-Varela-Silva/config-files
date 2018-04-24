@@ -144,7 +144,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Deseja realizar o logout? Isto encerra sua sessão.' -b 'Sim, sair' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Deseja realizar o logout? Isto encerrará sua sessão.' -b 'Sim, sair' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -238,3 +238,10 @@ for_window [class="Thunar"] move to workspace $workspace4
 for_window [class="Insomnia"] move to workspace $workspace5
 for_window [class="jetbrains-datagrip"] move to workspace $workspace7
 for_window [class="Spotify"] move to workspace $workspace10
+
+#screenlayout
+#exec_always sh /home/diego/.screenlayout/layout.sh
+
+#numpad keyboard
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
