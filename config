@@ -31,6 +31,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+KP_Enter exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -89,7 +90,7 @@ set $workspace4 "4 "
 set $workspace5 "5 "
 set $workspace6 "6 SAV"
 set $workspace7 "7 "
-set $workspace8 "8 "
+set $workspace8 "8 "
 set $workspace9 "9 "
 set $workspace10 "10 "
 
@@ -207,9 +208,9 @@ exec --no-startup-id synclient VertScrollDelta=-113
 bindsym $mod+Shift+l exec i3lock --color "$bg-color"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%  #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%  #decrease sound volume
-bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 1 toggle #mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%  #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%  #decrease sound volume
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 0 toggle #mute sound
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp   exec brightness +20 # increase screen brightness
@@ -242,6 +243,6 @@ for_window [class="Spotify"] move to workspace $workspace10
 #screenlayout
 #exec_always sh /home/diego/.screenlayout/layout.sh
 
-#numpad keyboard
+#Numpad keyboard indicators
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
