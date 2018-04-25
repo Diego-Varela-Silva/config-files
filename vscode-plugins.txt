@@ -10,6 +10,7 @@ vscode great icons
 beatify-css-scss
 kotlin language
 xml tools
+npm
 
 --------------------------------
 Ionic + Angular2+
@@ -20,6 +21,11 @@ Cordova Tools
 Json to TS
 Move to TS
 Tslint
+
+--Test
+Autoimport
+Postfix
+TsArrange
 
 --------------------------------
 Ionic + AngularJS
