@@ -226,9 +226,10 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Automatic start programs
+exec copyq
+exec nm-applet
 exec compton -f
 exec indicator-sound-switcher
-exec nm-applet
 exec /usr/bin/dropbox start
 exec_always feh --bg-scale ~/Imagens/.wallpaper.jpg
 
@@ -240,9 +241,6 @@ for_window [class="Insomnia"] move to workspace $workspace5
 for_window [class="jetbrains-datagrip"] move to workspace $workspace7
 for_window [class="Spotify"] move to workspace $workspace10
 
-#screenlayout
-#exec_always sh /home/diego/.screenlayout/layout.sh
-
-#Numpad keyboard indicators
+# Key indicators
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks

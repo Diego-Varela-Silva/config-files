@@ -128,6 +128,9 @@ sudo apt install gparted -y
 echo "Instalando Ccze"
 sudo apt install ccze -y
 
+echo "Instalando Copyq"
+sudo apt install copyq
+
 echo "Instalando Java"
 sudo apt-get install python-software-properties -y
 sudo add-apt-repository ppa:webupd8team/java
