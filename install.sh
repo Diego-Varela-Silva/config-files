@@ -21,7 +21,7 @@ sudo apt update
 sudo apt install google-chrome-stable -y
 
 echo "Instalando Git"
-sudo apt install git -y
+sudo apt install git-core -y
 
 echo "Configurando Git"
 git config --global user.email "diegovarela.paiva@hotmail.com"
