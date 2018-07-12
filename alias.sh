@@ -2,7 +2,10 @@
 
 #Personal alias for multiple purposes
 
+# plugins git mvn adb
+
 color_log() {
+    clear
     if [ -z ${2} ]; then cat $1 | ccze -A; else cat $1 | ccze -A | grep $2; fi
 }
 
@@ -21,7 +24,7 @@ alias gssu="git stash save --include-untracked"
 alias adbi="adb install platforms/android/build/outputs/apk/debug/android-debug.apk"
 alias adbu="adb uninstall"
 alias clear_data="adb shell pm clear"
-alias is="ionic serve"
+alias is="ionic serve --no-open"
 alias icra="ionic cordova run android"
 alias icral="ionic cordova run android -lsc --livereload-port 8101"
 alias ira="ionic run android"
